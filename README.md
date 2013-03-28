@@ -11,7 +11,7 @@ re-save the document, allowing quick experimentation. I've also
 built in a basic validation service.
 
 A quick note:  the document is saved *in-place*, so don't be too
-cavelier with your edits if you don't have a backup.
+cavalier with your edits if you don't have a backup.
 
 Since I wrote it for *myself*, it's not terribly polished. Exceptions
 are shown as error messages, and the validation doesn't quite work as

@@ -1,0 +1,11 @@
+﻿<Window x:Class="DocxXmlViewer.ErrorDisplay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ErrorDisplay" Height="300" Width="300">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <TextBox x:Name="ErrorTextBox" TextBlock.FontFamily="Courier New"
+                     VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

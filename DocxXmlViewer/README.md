@@ -18,5 +18,4 @@ DocxXmlViewer requires the [OpenXml SDK 2.0][OpenXml] and .NET Version 3.5
 or later. It's set to build with .NET Version 4.5, but it's been tested on
 3.5 and works fine.
 
-[OpenXml]: http://www.microsoft.com/en-us/download/details.aspx?id=5124
-	"OpenXml SDK 2.0"
+[OpenXml]: http://www.microsoft.com/en-us/download/details.aspx?id=5124 "OpenXml SDK 2.0"

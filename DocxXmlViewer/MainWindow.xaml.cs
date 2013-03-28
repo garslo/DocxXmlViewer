@@ -68,9 +68,6 @@ namespace DocxXmlViewer
             {
                 MessageBox.Show(exception.Message);
             }
-            //IEnumerable<ValidationErrorInfo> errors = TextBox.Text.AsDocument().Validate();
-            //if (errors.Count() > 0)
-            //    errors.Display();
         }
     }
 }

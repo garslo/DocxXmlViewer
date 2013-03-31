@@ -15,13 +15,12 @@ namespace DocxXmlViewer
     {
         public static string GetFormattedXml(string docxPath)
         {
-            string xml = docxPath.GetXml();
+            string xml = GetXml(docxPath);
             // XDocument.Parse() formats things nicely.
             return XDocument.Parse(xml).ToString();
         }
 
-        // TODO: Does this make sense as a _string_ extension?
-        private static string GetXml(this string docxPath)
+        private static string GetXml(string docxPath)
         {
             using (var docx = WordprocessingDocument.Open(docxPath, false))
             {
@@ -30,16 +29,16 @@ namespace DocxXmlViewer
         }
 
 
-        public static void SaveAsDocx(this string xmlContents, string docxPath)
+        public static void SaveAsDocx(string xmlContents, string docxPath)
         {
             using (var docx = WordprocessingDocument.Open(docxPath, true))
             {
-                docx.MainDocumentPart.Document = xmlContents.AsDocument();
+                docx.MainDocumentPart.Document = AsDocument(xmlContents);
             }
         }
 
 
-        public static Document AsDocument(this string xmlContents)
+        public static Document AsDocument(string xmlContents)
         {
             return new Document(xmlContents);
         }

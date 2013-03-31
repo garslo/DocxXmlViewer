@@ -50,7 +50,7 @@ namespace DocxXmlViewer
         {
             try
             {
-                TextBox.Text.SaveAsDocx(FileInput.Text);
+                Util.SaveAsDocx(TextBox.Text, FileInput.Text);
             }
             catch (Exception exception)
             {
@@ -62,7 +62,7 @@ namespace DocxXmlViewer
         {
             try
             {
-                TextBox.Text.AsDocument();
+                Util.AsDocument(TextBox.Text);
             }
             catch (Exception exception)
             {
